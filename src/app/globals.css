@@ -1,7 +1,15 @@
 @import "tailwindcss";
 
-/* globals.css or Testimonials.module.css */
-.slick-center article {
-  opacity: 1 !important;
-  transform: scale(1) !important;
+:root {
+  --brand-start: 152 76% 24%; /* emerald-800 */
+  --brand-end: 221 83% 39%; /* blue-700 */
 }
+
+html, body { height: 100%; }
+
+/* Enhance default typography and spacing */
+h1,h2,h3 { letter-spacing: -0.02em; }
+section { scroll-margin-top: 80px; }
+
+/* Slick overrides */
+.slick-center article { opacity: 1 !important; transform: scale(1) !important; }

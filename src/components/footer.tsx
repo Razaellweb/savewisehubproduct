@@ -38,7 +38,7 @@ const Footer = () => {
           <div className="w-full mt-6 flex flex-col md:flex-row items-center justify-between gap-3 text-slate-600">
             <p className="text-sm">© {new Date().getFullYear()} SaveWise Hub. All rights reserved.</p>
             <div className="flex items-center gap-4 text-sm">
-              <Link href="#" className="hover:text-slate-900">Privacy Policy</Link>
+              <Link href="/legal/privacy" className="hover:text-slate-900">Privacy Policy</Link>
               <span className="text-slate-300">|</span>
               <Link href="#" className="hover:text-slate-900">Terms of Service</Link>
             </div>
