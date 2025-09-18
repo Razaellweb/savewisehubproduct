@@ -1,31 +1,25 @@
 import React from 'react'
 import Link from "next/link";
 
-
 const CTA = () => {
   return (
-    <div className=" mt-[7rem] w-[97%] mx-auto md:mx-0 md:w-full bg-[#1c1c1c] py-[3rem] relative border border-[#262626] rounded-[1rem]">
-        <img
-            src="/Abstract-Design-2.png"
-            alt=""
-            className="absolute top-0 left-0 z-0"
-          />
-        <div className="w-[86%] md:w-[90%] mx-auto flex items-center flex-wrap justify-between">
-        <div className="w-[96%] md:w-[67%] left-0">
-          <h1 className="text-3xl md:text-3xl xl:text-4xl text-center md:text-left">
-            Start your financial journey with <span className="text-[#CAFF33]">GeekPay today! </span>
-          </h1>
-          <h1 className="text-base pt-3.5 text-[#B3B3B3] text-center md:text-left">
-            Ready to take control of your finances? Join GeekPay now, and let us help you achieve your financial goals with our tailored solutions and exceptional customer service
-          </h1>
+    <div className="mt-16 w-full bg-white py-10 relative border border-slate-200 rounded-2xl shadow-sm">
+      <div className="w-[92%] mx-auto flex items-center flex-wrap justify-between gap-6">
+        <div className="w-full md:w-2/3">
+          <h2 className="text-2xl md:text-3xl xl:text-4xl text-center md:text-left font-semibold tracking-tight">
+            Start your journey with <span className="text-teal-700">SaveWise Hub</span>
+          </h2>
+          <p className="text-base mt-3 text-slate-600 text-center md:text-left">
+            Build disciplined savings, invest with confidence, and access instant, affordable credit—designed for Nigerians.
+          </p>
         </div>
-        <div className="w-fit right-0 mt-4 md:mt-0 mx-auto md:mx-0">
-          <Link href="/">
-          <button className='px-7 py-3 rounded-full bg-[#CAFF33] text-black text-xl cursor-pointer mt-[2rem]'>Open Account</button>
+        <div className="w-fit mx-auto md:mx-0">
+          <Link href="/signup" className='px-6 py-3 rounded-full bg-teal-700 text-white text-base font-medium shadow hover:bg-teal-800'>
+            Get started free
           </Link>
         </div>
       </div>
-      </div>
+    </div>
   )
 }
 
