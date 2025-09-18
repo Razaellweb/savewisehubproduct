@@ -12,7 +12,7 @@ const CTA = () => {
           <p className="text-base mt-3 text-slate-600 text-center md:text-left">
             Build disciplined savings, invest with confidence, and access instant, affordable credit—designed for Nigerians.
           </p>
-        </div>
+        </div> 
         <div className="w-fit mx-auto md:mx-0">
           <Link href="/signup" className='px-6 py-3 rounded-full bg-teal-700 text-white text-base font-medium shadow hover:bg-teal-800'>
             Get started free
