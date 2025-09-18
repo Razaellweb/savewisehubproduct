@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="w-full bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 text-slate-900 dark:text-slate-100">
+    <footer className="w-full bg-white border-t border-slate-200">
       <div className="w-[96%] md:w-[92%] 2xl:w-[80%] mx-auto py-10">
         <div className="w-full flex flex-col items-center">
           {/* Brand */}
@@ -15,32 +15,32 @@ const Footer = () => {
 
           {/* Nav */}
           <nav className="flex items-center gap-1 mt-6 flex-wrap justify-center">
-            <Link href="#features" className="text-sm md:text-base px-3 py-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800">Features</Link>
-            <Link href="#investments" className="text-sm md:text-base px-3 py-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800">Investments</Link>
-            <Link href="#pricing" className="text-sm md:text-base px-3 py-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800">Pricing</Link>
-            <Link href="#testimonials" className="text-sm md:text-base px-3 py-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800">Testimonials</Link>
-            <Link href="#faq" className="text-sm md:text-base px-3 py-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800">FAQ</Link>
-            <Link href="#contact" className="text-sm md:text-base px-3 py-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800">Contact</Link>
+            <Link href="#features" className="text-sm md:text-base px-3 py-2 rounded-full hover:bg-slate-100">Features</Link>
+            <Link href="#investments" className="text-sm md:text-base px-3 py-2 rounded-full hover:bg-slate-100">Investments</Link>
+            <Link href="#pricing" className="text-sm md:text-base px-3 py-2 rounded-full hover:bg-slate-100">Pricing</Link>
+            <Link href="#testimonials" className="text-sm md:text-base px-3 py-2 rounded-full hover:bg-slate-100">Testimonials</Link>
+            <Link href="#faq" className="text-sm md:text-base px-3 py-2 rounded-full hover:bg-slate-100">FAQ</Link>
+            <Link href="#contact" className="text-sm md:text-base px-3 py-2 rounded-full hover:bg-slate-100">Contact</Link>
           </nav>
 
-          <div className="w-full h-px bg-slate-200 dark:bg-slate-800 mt-8" />
+          <div className="w-full h-px bg-slate-200 mt-8" />
 
           {/* Contact */}
-          <div className="flex items-center gap-4 mt-6 flex-wrap justify-center text-slate-700 dark:text-slate-300">
+          <div className="flex items-center gap-4 mt-6 flex-wrap justify-center text-slate-700">
             <span className="flex items-center gap-2 text-sm md:text-base"><Mail className="w-5 h-5 text-teal-700" /> support@savewisehub.com</span>
             <span className="flex items-center gap-2 text-sm md:text-base"><Phone className="w-5 h-5 text-teal-700" /> +234 700 000 0000</span>
             <span className="flex items-center gap-2 text-sm md:text-base"><MapPin className="w-5 h-5 text-teal-700" /> Lagos, Nigeria</span>
           </div>
 
-          <div className="w-full h-px bg-slate-200 dark:bg-slate-800 mt-8" />
+          <div className="w-full h-px bg-slate-200 mt-8" />
 
           {/* Bottom bar */}
-          <div className="w-full mt-6 flex flex-col md:flex-row items-center justify-between gap-3 text-slate-600 dark:text-slate-400">
+          <div className="w-full mt-6 flex flex-col md:flex-row items-center justify-between gap-3 text-slate-600">
             <p className="text-sm">© {new Date().getFullYear()} SaveWise Hub. All rights reserved.</p>
             <div className="flex items-center gap-4 text-sm">
-              <Link href="#" className="hover:text-slate-900 dark:hover:text-white">Privacy Policy</Link>
-              <span className="text-slate-300 dark:text-slate-600">|</span>
-              <Link href="#" className="hover:text-slate-900 dark:hover:text-white">Terms of Service</Link>
+              <Link href="#" className="hover:text-slate-900">Privacy Policy</Link>
+              <span className="text-slate-300">|</span>
+              <Link href="#" className="hover:text-slate-900">Terms of Service</Link>
             </div>
           </div>
         </div>
