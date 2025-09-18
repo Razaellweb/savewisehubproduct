@@ -27,10 +27,25 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  // Inline script runs before React hydration to avoid flashing the wrong theme
+  const themeInitializer = `(() => {
+    try {
+      const stored = localStorage.getItem('theme');
+      const mql = window.matchMedia('(prefers-color-scheme: dark)');
+      const theme = stored ? stored : (mql.matches ? 'dark' : 'light');
+      const root = document.documentElement;
+      if (theme === 'dark') root.classList.add('dark');
+      else root.classList.remove('dark');
+    } catch (_) {}
+  })();`;
+
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: themeInitializer }} />
+      </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white text-slate-900 min-h-screen overflow-x-hidden`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white text-slate-900 dark:bg-slate-950 dark:text-slate-100 min-h-screen overflow-x-hidden`}
       >
         <div className="w-[96%] md:w-[92%] 2xl:w-[80%] mx-auto pt-6 md:pt-8">
           <Navbar />
